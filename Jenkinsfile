@@ -4,7 +4,7 @@ pipeline {
     stage('Install Requirements') {
       steps {
         sh '''
-          sudo pip --no-cache-dir install -r requirments.txt
+          sudo pip --no-cache-dir install -r requirements.txt
         '''
       }
     }
