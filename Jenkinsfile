@@ -8,10 +8,5 @@ pipeline {
         '''
       }
     }
-    stage('Run Tests') {
-      steps {
-        sh "nosetests --nocapture --with-xunit --with-coverage --cover-xml Tests/food.py --cover-inclusive --cover-package=start"
-      }
-    }
   }
 }
